@@ -6,7 +6,7 @@ function handleListAdd() {
             let listEntry = $('#shopping-list-entry').val();
             console.log(listEntry);
             // append listEntry to shopping list
-            $('#js-shopping-list').append(
+            $('.shopping-list').append(
                 `<li>
           <span class="shopping-item">${listEntry}</span>
           <div class="shopping-item-controls">
@@ -20,5 +20,9 @@ function handleListAdd() {
         </li>`);
 
         })
+}
+
+function handleCheck() {
+
 }
 $(handleListAdd)
